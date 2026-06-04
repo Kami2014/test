@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 
   <!-- Stili -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -22,14 +22,28 @@
 ════════════════════════════════════════════ -->
 <nav id="navbar">
   <a href="#" class="nav-logo">Typogra<span>f</span>ica</a>
-  <ul class="nav-links">
-    <li><a href="#servizi">Servizi</a></li>
-    <li><a href="#tesi">Tesi di Laurea</a></li>
-    <li><a href="#materiali">Materiali</a></li>
-    <li><a href="#contatti">Contatti</a></li>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servizi" onclick="closeMenu()">Servizi</a></li>
+    <li><a href="#tesi" onclick="closeMenu()">Tesi di Laurea</a></li>
+    <li><a href="#materiali" onclick="closeMenu()">Materiali</a></li>
+    <li><a href="#contatti" onclick="closeMenu()">Contatti</a></li>
   </ul>
   <a href="#contatti" class="nav-cta">Richiedi Preventivo</a>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#servizi" onclick="closeMenu()">Servizi</a></li>
+    <li><a href="#tesi" onclick="closeMenu()">Tesi di Laurea</a></li>
+    <li><a href="#materiali" onclick="closeMenu()">Materiali</a></li>
+    <li><a href="#contatti" onclick="closeMenu()">Contatti</a></li>
+    <li><a href="#contatti" class="mobile-cta" onclick="closeMenu()">Richiedi Preventivo</a></li>
+  </ul>
+</div>
 
 <!-- ═══════════════════════════════════════════
      HERO
@@ -637,7 +651,72 @@
 <!-- Supabase SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <!-- Script del sito -->
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+
+<style>
+/* ── HAMBURGER ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column; justify-content: center; gap: 5px;
+  width: 36px; height: 36px;
+  background: transparent; border: none; cursor: pointer; padding: 4px;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--white); border-radius: 2px;
+  transition: all 0.3s ease; transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── MOBILE MENU OVERLAY ── */
+.mobile-menu {
+  position: fixed; inset: 0; z-index: 99;
+  background: rgba(13,12,10,0.97);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mobile-menu.open { opacity: 1; pointer-events: all; }
+.mobile-menu ul { list-style: none; text-align: center; }
+.mobile-menu li { margin-bottom: 32px; }
+.mobile-menu a {
+  font-family: var(--serif); font-size: clamp(32px, 8vw, 48px);
+  font-weight: 300; color: rgba(250,248,244,0.7);
+  text-decoration: none; letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu .mobile-cta {
+  font-family: var(--sans); font-size: 13px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid rgba(184,151,90,0.4);
+  padding: 14px 36px; font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex; }
+  .nav-cta { display: none; }
+}
+</style>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn   = document.getElementById('hamburger');
+  const isOpen = menu.classList.contains('open');
+  menu.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  document.body.style.overflow = isOpen ? '' : 'hidden';
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.body.style.overflow = '';
+}
+</script>
 
 </body>
 </html>
