@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typografica — Centro Stampa Professionale</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Stili -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CURSORE CUSTOM -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Typogra<span>f</span>ica</a>
+  <ul class="nav-links">
+    <li><a href="#servizi">Servizi</a></li>
+    <li><a href="#tesi">Tesi di Laurea</a></li>
+    <li><a href="#materiali">Materiali</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <a href="#contatti" class="nav-cta">Richiedi Preventivo</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-left">
+    <p class="hero-tag">Centro Stampa Professionale — Torino</p>
+    <h1 class="hero-title">
+      L'arte della<br>
+      <em>stampa perfetta</em>
+    </h1>
+    <p class="hero-subtitle">
+      Dalla tipografia artigianale alla stampa digitale ad alta definizione.
+      Ogni lavoro è trattato con cura sartoriale, ogni dettaglio conta.
+    </p>
+    <div class="hero-actions">
+      <a href="#servizi" class="btn-primary">
+        Scopri i Servizi
+        <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a href="#tesi" class="btn-secondary">Stampa Tesi →</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-visual">
+      <svg class="press-illustration" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(184,151,90,0.06)" stroke-width="0.5"/>
+          </pattern>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   style="stop-color:#b8975a;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#d4b47a;stop-opacity:1"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="700" fill="url(#grid)"/>
+        <text x="60" y="180" font-family="Georgia,serif" font-size="140" font-weight="300" fill="rgba(184,151,90,0.12)">T</text>
+        <!-- Foglio stampato -->
+        <rect x="80" y="200" width="280" height="360" rx="2" fill="#1a1814" stroke="rgba(184,151,90,0.2)" stroke-width="0.5"/>
+        <g stroke="rgba(250,248,244,0.08)" stroke-width="0.5">
+          <line x1="100" y1="240" x2="340" y2="240"/>
+          <line x1="100" y1="260" x2="320" y2="260"/>
+          <line x1="100" y1="280" x2="300" y2="280"/>
+          <line x1="100" y1="300" x2="280" y2="300"/>
+          <line x1="100" y1="330" x2="340" y2="330"/>
+          <line x1="100" y1="350" x2="310" y2="350"/>
+          <line x1="100" y1="370" x2="290" y2="370"/>
+          <line x1="100" y1="400" x2="340" y2="400"/>
+          <line x1="100" y1="420" x2="320" y2="420"/>
+          <line x1="100" y1="440" x2="300" y2="440"/>
+          <line x1="100" y1="460" x2="270" y2="460"/>
+        </g>
+        <rect x="80" y="200" width="280" height="28" rx="2" fill="url(#goldGrad)" opacity="0.7"/>
+        <text x="100" y="219" font-family="Georgia,serif" font-size="11" fill="#0d0c0a" letter-spacing="2">TYPOGRAFICA</text>
+        <!-- Card laterale -->
+        <rect x="380" y="240" width="160" height="200" rx="2" fill="#1f1e1b" stroke="rgba(184,151,90,0.15)" stroke-width="0.5"/>
+        <rect x="395" y="255" width="130" height="4"  fill="rgba(184,151,90,0.4)"/>
+        <rect x="395" y="270" width="100" height="2"  fill="rgba(250,248,244,0.10)"/>
+        <rect x="395" y="282" width="115" height="2"  fill="rgba(250,248,244,0.10)"/>
+        <rect x="395" y="294" width="90"  height="2"  fill="rgba(250,248,244,0.08)"/>
+        <rect x="395" y="314" width="130" height="1"  fill="rgba(184,151,90,0.20)"/>
+        <rect x="395" y="326" width="110" height="2"  fill="rgba(250,248,244,0.08)"/>
+        <rect x="395" y="338" width="95"  height="2"  fill="rgba(250,248,244,0.07)"/>
+        <rect x="395" y="360" width="130" height="3"  fill="rgba(184,151,90,0.30)"/>
+        <rect x="395" y="374" width="100" height="2"  fill="rgba(250,248,244,0.08)"/>
+        <rect x="395" y="386" width="120" height="2"  fill="rgba(250,248,244,0.07)"/>
+        <rect x="395" y="398" width="85"  height="2"  fill="rgba(250,248,244,0.06)"/>
+        <rect x="395" y="410" width="105" height="2"  fill="rgba(250,248,244,0.07)"/>
+        <!-- Sigillo -->
+        <circle cx="460" cy="530" r="55" fill="none" stroke="rgba(184,151,90,0.4)" stroke-width="1"/>
+        <circle cx="460" cy="530" r="48" fill="none" stroke="rgba(184,151,90,0.2)" stroke-width="0.5"/>
+        <text x="460" y="524" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="rgba(184,151,90,0.7)" letter-spacing="2">DAL</text>
+        <text x="460" y="543" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="300" fill="rgba(184,151,90,0.9)">1987</text>
+        <!-- Lettere decorative -->
+        <text x="30"  y="420" font-family="Georgia,serif" font-size="60" fill="rgba(184,151,90,0.06)" transform="rotate(-15,30,420)">A</text>
+        <text x="500" y="160" font-family="Georgia,serif" font-size="80" fill="rgba(184,151,90,0.05)" transform="rotate(10,500,160)">P</text>
+        <text x="140" y="620" font-family="Georgia,serif" font-size="50" fill="rgba(184,151,90,0.07)" transform="rotate(5,140,620)">g</text>
+        <!-- Tacche di misura -->
+        <g stroke="rgba(184,151,90,0.25)" stroke-width="0.5">
+          <line x1="60" y1="200" x2="60" y2="560"/>
+          <line x1="56" y1="200" x2="64" y2="200"/>
+          <line x1="56" y1="560" x2="64" y2="560"/>
+          <line x1="80"  y1="590" x2="360" y2="590"/>
+          <line x1="80"  y1="586" x2="80"  y2="594"/>
+          <line x1="360" y1="586" x2="360" y2="594"/>
+        </g>
+        <text x="50"  y="385" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(184,151,90,0.35)" transform="rotate(-90,50,385)">297 mm</text>
+        <text x="220" y="608" text-anchor="middle" font-family="monospace" font-size="9" fill="rgba(184,151,90,0.35)">210 mm</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">35+</span>
+      <span class="stat-label">Anni di Esperienza</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">12k</span>
+      <span class="stat-label">Tesi Stampate</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">99%</span>
+      <span class="stat-label">Clienti Soddisfatti</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scorri
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     MARQUEE
+════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Offset</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Digitale</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Tesi di Laurea</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Rilegatura Cartonata</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Gran Formato</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Biglietti da Visita</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Brochure &amp; Cataloghi</span>
+    <!-- duplicato per loop seamless -->
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Offset</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Digitale</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Tesi di Laurea</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Rilegatura Cartonata</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Stampa Gran Formato</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Biglietti da Visita</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Brochure &amp; Cataloghi</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SERVIZI
+════════════════════════════════════════════ -->
+<section class="services" id="servizi">
+  <div class="bg-text" style="bottom:-40px;right:-20px;">PRINT</div>
+  <div class="section-header">
+    <div>
+      <p class="section-tag reveal">I Nostri Servizi</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Ogni progetto,<br><em>perfettamente eseguito</em>
+      </h2>
+    </div>
+    <a href="#contatti" class="section-link reveal">Tutti i servizi →</a>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- 01 -->
+    <div class="service-card reveal">
+      <span class="service-num">01</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="8" y="14" width="32" height="22" rx="1" stroke="#b8975a" stroke-width="1.5"/>
+        <line x1="8"  y1="20" x2="40" y2="20" stroke="#b8975a" stroke-width="1"/>
+        <rect x="14" y="36" width="4"  height="6" stroke="#b8975a" stroke-width="1.5"/>
+        <rect x="30" y="36" width="4"  height="6" stroke="#b8975a" stroke-width="1.5"/>
+        <line x1="8"  y1="42" x2="40" y2="42" stroke="#b8975a" stroke-width="1.5"/>
+        <rect x="19" y="24" width="10" height="7" rx="0.5" stroke="#b8975a" stroke-width="1"/>
+      </svg>
+      <h3 class="service-name">Stampa Digitale</h3>
+      <p class="service-desc">Stampa ad alta risoluzione per tirature brevi e medie. Colori fedeli, tempi rapidi, nessun compromesso sulla qualità.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">4+0 / 4+4</span>
+        <span class="service-tag">HD 1200 DPI</span>
+        <span class="service-tag">Consegna 24h</span>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-num">02</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="10" y="6"  width="22" height="30" rx="1" stroke="#b8975a" stroke-width="1.5"/>
+        <rect x="16" y="6"  width="22" height="30" rx="1" stroke="#b8975a" stroke-width="1" stroke-dasharray="2 2"/>
+        <line x1="14" y1="14" x2="28" y2="14" stroke="#b8975a" stroke-width="1"/>
+        <line x1="14" y1="19" x2="25" y2="19" stroke="#b8975a" stroke-width="1"/>
+        <line x1="14" y1="24" x2="27" y2="24" stroke="#b8975a" stroke-width="1"/>
+        <line x1="14" y1="29" x2="22" y2="29" stroke="#b8975a" stroke-width="1"/>
+        <path d="M10 36 Q10 42 16 42 L32 42 Q38 42 38 36" stroke="#b8975a" stroke-width="1.5" fill="none"/>
+      </svg>
+      <h3 class="service-name">Stampa Tipografica</h3>
+      <p class="service-desc">L'eccellenza della stampa offset per tirature importanti. Pantone, colori speciali, finiture che fanno la differenza.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">Offset</span>
+        <span class="service-tag">Pantone</span>
+        <span class="service-tag">Vernici UV</span>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-num">03</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="8"  y="4"  width="24" height="32" rx="1" stroke="#b8975a" stroke-width="1.5"/>
+        <rect x="6"  y="6"  width="24" height="32" rx="1" stroke="#b8975a" stroke-width="0.5"/>
+        <line x1="12" y1="14" x2="28" y2="14" stroke="#b8975a" stroke-width="1"/>
+        <line x1="12" y1="20" x2="26" y2="20" stroke="#b8975a" stroke-width="1"/>
+        <line x1="12" y1="26" x2="24" y2="26" stroke="#b8975a" stroke-width="1"/>
+        <path d="M30 20 L42 20 L42 44 L8 44 L8 36" stroke="#b8975a" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M36 14 L42 20 L36 20 Z" stroke="#b8975a" stroke-width="1" fill="rgba(184,151,90,0.2)"/>
+      </svg>
+      <h3 class="service-name">Tesi di Laurea</h3>
+      <p class="service-desc">Il tuo traguardo merita la migliore presentazione. Rilegatura cartonata, spirale e brossura con carta premium selezionata.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">Consegna Express</span>
+        <span class="service-tag">Cartonata</span>
+        <span class="service-tag">Spirale</span>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="service-card reveal reveal-delay-3">
+      <span class="service-num">04</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="4"  y="10" width="40" height="28" rx="1" stroke="#b8975a" stroke-width="1.5"/>
+        <line x1="4"  y1="20" x2="44" y2="20" stroke="#b8975a" stroke-width="1"/>
+        <rect x="10" y="24" width="12" height="8" rx="0.5" stroke="#b8975a" stroke-width="1"/>
+        <line x1="28" y1="26" x2="38" y2="26" stroke="#b8975a" stroke-width="1"/>
+        <line x1="28" y1="30" x2="36" y2="30" stroke="#b8975a" stroke-width="1"/>
+      </svg>
+      <h3 class="service-name">Materiali Marketing</h3>
+      <p class="service-desc">Brochure, flyer, cataloghi e biglietti da visita. Comunica il tuo brand con materiali che lasciano il segno.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">Brochure</span>
+        <span class="service-tag">Flyer</span>
+        <span class="service-tag">Business Card</span>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-num">05</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="6"  y="6"  width="36" height="28" rx="1" stroke="#b8975a" stroke-width="1.5"/>
+        <line x1="6"  y1="18" x2="42" y2="18" stroke="#b8975a" stroke-width="2" stroke-dasharray="3 2"/>
+        <text x="24" y="13" text-anchor="middle" font-family="serif" font-size="8" fill="#b8975a">POSTER</text>
+        <circle cx="16" cy="26" r="5" stroke="#b8975a" stroke-width="1"/>
+        <rect x="26" y="22" width="12" height="8" rx="0.5" stroke="#b8975a" stroke-width="1"/>
+        <line x1="12" y1="38" x2="36" y2="38" stroke="#b8975a" stroke-width="1.5"/>
+        <line x1="6"  y1="43" x2="42" y2="43" stroke="#b8975a" stroke-width="0.5"/>
+      </svg>
+      <h3 class="service-name">Stampa Gran Formato</h3>
+      <p class="service-desc">Banner, poster, roll-up e totem fino a 3 metri di altezza. Visibilità massima per i tuoi eventi e spazi espositivi.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">Banner</span>
+        <span class="service-tag">Roll-up</span>
+        <span class="service-tag">Totem</span>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-num">06</span>
+      <svg class="service-icon" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="16" stroke="#b8975a" stroke-width="1.5"/>
+        <circle cx="24" cy="24" r="10" stroke="#b8975a" stroke-width="0.5"/>
+        <line x1="24" y1="8"  x2="24" y2="14" stroke="#b8975a" stroke-width="1"/>
+        <line x1="24" y1="34" x2="24" y2="40" stroke="#b8975a" stroke-width="1"/>
+        <line x1="8"  y1="24" x2="14" y2="24" stroke="#b8975a" stroke-width="1"/>
+        <line x1="34" y1="24" x2="40" y2="24" stroke="#b8975a" stroke-width="1"/>
+        <text x="24" y="27" text-anchor="middle" font-family="serif" font-size="9" fill="#b8975a">✦</text>
+      </svg>
+      <h3 class="service-name">Finiture Speciali</h3>
+      <p class="service-desc">Plastificazione, goffratura, stampa a caldo oro e argento. Trasforma il tuo materiale stampato in un'esperienza tattile.</p>
+      <div class="service-tag-list">
+        <span class="service-tag">Stampa a Caldo</span>
+        <span class="service-tag">Goffratura</span>
+        <span class="service-tag">Rilievo</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESI DI LAUREA
+════════════════════════════════════════════ -->
+<section class="tesi-section" id="tesi">
+  <div class="tesi-content">
+    <p class="section-tag reveal">Specialisti in</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      Tesi di Laurea<br><em>&amp; Elaborati Accademici</em>
+    </h2>
+    <p class="hero-subtitle reveal reveal-delay-2" style="max-width:100%;margin-top:24px;font-size:14px;">
+      Il tuo lavoro di anni merita la massima cura. Offriamo tutti i tipi di rilegatura
+      con carta premium, stampa professionale e servizio espresso anche nelle sessioni più affollate.
+    </p>
+    <div class="tesi-features reveal reveal-delay-3">
+      <div class="tesi-feature">
+        <span class="tesi-feature-icon">⊞</span>
+        <p class="tesi-feature-name">Rilegatura Cartonata</p>
+        <p class="tesi-feature-desc">Cover rigida personalizzata con titolo in rilievo o stampa a caldo</p>
+      </div>
+      <div class="tesi-feature">
+        <span class="tesi-feature-icon">◎</span>
+        <p class="tesi-feature-name">Spirale &amp; Brossura</p>
+        <p class="tesi-feature-desc">Opzioni economiche e pratiche per ogni esigenza accademica</p>
+      </div>
+      <div class="tesi-feature">
+        <span class="tesi-feature-icon">◷</span>
+        <p class="tesi-feature-name">Servizio Express</p>
+        <p class="tesi-feature-desc">Pronta in 4 ore anche nei giorni di sessione estiva e invernale</p>
+      </div>
+      <div class="tesi-feature">
+        <span class="tesi-feature-icon">✦</span>
+        <p class="tesi-feature-name">Carta Premium</p>
+        <p class="tesi-feature-desc">Selezione di grammature e tipologie per un risultato eccellente</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tesi-visual reveal reveal-delay-2">
+    <div class="tesi-book"><div class="book-spine"></div></div>
+    <div class="tesi-book"><div class="book-spine"></div></div>
+    <div class="tesi-book">
+      <div class="book-spine"></div>
+      <div class="book-title-preview">
+        <h4>Analisi dei sistemi tipografici nell'era digitale</h4>
+        <p>Politecnico di Torino — A.A. 2023/2024</p>
+      </div>
+      <div class="book-decoration"></div>
+    </div>
+    <div class="tesi-badge">
+      <span>Pronta in</span>
+      <strong>4h</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROCESSO
+════════════════════════════════════════════ -->
+<section class="process">
+  <div class="section-header">
+    <div>
+      <p class="section-tag reveal">Come Funziona</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Dal file alla<br><em>stampa in mano</em>
+      </h2>
+    </div>
+  </div>
+  <div class="process-steps">
+    <div class="process-line"></div>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="step-num-wrap"><div class="step-num">I</div></div>
+        <h4 class="step-title">Invia il File</h4>
+        <p class="step-desc">Carica il tuo file PDF, AI o InDesign tramite il nostro portale online o consegnalo direttamente in sede.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num-wrap"><div class="step-num">II</div></div>
+        <h4 class="step-title">Preventivo Rapido</h4>
+        <p class="step-desc">Ricevi un preventivo dettagliato entro 30 minuti. Trasparenza totale sui costi, nessuna sorpresa.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num-wrap"><div class="step-num">III</div></div>
+        <h4 class="step-title">Stampa &amp; Rilegatura</h4>
+        <p class="step-desc">Il nostro team elabora il lavoro con attenzione artigianale. Controllo qualità su ogni singolo pezzo.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num-wrap"><div class="step-num">IV</div></div>
+        <h4 class="step-title">Ritiro o Consegna</h4>
+        <p class="step-desc">Passa in sede o scegli la consegna a domicilio. Imballaggio curato per un materiale sempre perfetto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CITAZIONE
+════════════════════════════════════════════ -->
+<div class="quote-banner reveal">
+  <p class="quote-text">
+    "La tipografia è il mestiere di fare <em>bella e leggibile</em> la parola scritta.
+    È il più invisibile dei mestieri, e il più potente."
+  </p>
+  <p class="quote-author">— Atelier Typografica, Torino dal 1987</p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MATERIALI
+════════════════════════════════════════════ -->
+<section class="materials" id="materiali">
+  <div class="section-header">
+    <div>
+      <p class="section-tag reveal">Qualità dei Materiali</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Carta selezionata<br><em>per ogni esigenza</em>
+      </h2>
+    </div>
+  </div>
+  <div class="materials-grid">
+    <div class="material-card reveal">
+      <div class="material-bg material-bg-1"></div>
+      <div class="material-texture"></div>
+      <div class="material-overlay"></div>
+      <div class="material-tag-indicator"></div>
+      <div class="material-content">
+        <h4 class="material-name">Patinata Lucida</h4>
+        <p class="material-desc">115g — 350g<br>Colori brillanti, contrasto elevato</p>
+      </div>
+    </div>
+    <div class="material-card reveal reveal-delay-1">
+      <div class="material-bg material-bg-2"></div>
+      <div class="material-texture"></div>
+      <div class="material-overlay"></div>
+      <div class="material-tag-indicator"></div>
+      <div class="material-content">
+        <h4 class="material-name">Patinata Opaca</h4>
+        <p class="material-desc">130g — 300g<br>Elegante, senza riflessi</p>
+      </div>
+    </div>
+    <div class="material-card reveal reveal-delay-2">
+      <div class="material-bg material-bg-3"></div>
+      <div class="material-texture"></div>
+      <div class="material-overlay"></div>
+      <div class="material-tag-indicator"></div>
+      <div class="material-content">
+        <h4 class="material-name">Riciclata Avorio</h4>
+        <p class="material-desc">80g — 160g<br>Eco-sostenibile, warm tone</p>
+      </div>
+    </div>
+    <div class="material-card reveal reveal-delay-3">
+      <div class="material-bg material-bg-4"></div>
+      <div class="material-texture"></div>
+      <div class="material-overlay"></div>
+      <div class="material-tag-indicator"></div>
+      <div class="material-content">
+        <h4 class="material-name">Carta da Tesi</h4>
+        <p class="material-desc">90g — 100g<br>Standard accademico, alta bianchezza</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTATTI / PREVENTIVO
+════════════════════════════════════════════ -->
+<section class="cta-section" id="contatti">
+
+  <!-- Info -->
+  <div class="cta-left">
+    <p class="section-tag reveal">Parliamo del Tuo Progetto</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      Richiedi un<br><em>preventivo gratuito</em>
+    </h2>
+    <p class="hero-subtitle reveal reveal-delay-2" style="margin-top:24px;font-size:14px;max-width:100%;">
+      Siamo a Torino, al servizio di privati, università e aziende.
+      Risposta garantita entro 30 minuti durante l'orario di apertura.
+    </p>
+    <div class="cta-info-items reveal reveal-delay-3">
+      <div class="cta-info-item">
+        <div class="cta-info-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div>
+          <p class="cta-info-label">Indirizzo</p>
+          <p class="cta-info-value">Via Roma 42, 10121 Torino</p>
+        </div>
+      </div>
+      <div class="cta-info-item">
+        <div class="cta-info-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        </div>
+        <div>
+          <p class="cta-info-label">Telefono</p>
+          <p class="cta-info-value">011 123 4567</p>
+        </div>
+      </div>
+      <div class="cta-info-item">
+        <div class="cta-info-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div>
+          <p class="cta-info-label">Email</p>
+          <p class="cta-info-value">info@typografica.it</p>
+        </div>
+      </div>
+      <div class="cta-info-item">
+        <div class="cta-info-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+        </div>
+        <div>
+          <p class="cta-info-label">Orari</p>
+          <p class="cta-info-value">Lun–Ven: 8:30–19:00 · Sab: 9:00–14:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="cta-form reveal reveal-delay-2">
+    <div class="form-grid">
+      <div class="form-row">
+        <label class="form-label" for="f-nome">Nome</label>
+        <input id="f-nome" class="form-input" type="text" placeholder="Mario Rossi">
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="f-email">Email</label>
+        <input id="f-email" class="form-input" type="email" placeholder="mario@email.it">
+      </div>
+    </div>
+    <div class="form-row">
+      <label class="form-label" for="f-servizio">Tipo di Servizio</label>
+      <select id="f-servizio" class="form-select">
+        <option>Stampa Digitale</option>
+        <option>Stampa Tipografica / Offset</option>
+        <option>Tesi di Laurea</option>
+        <option>Materiali Marketing</option>
+        <option>Stampa Gran Formato</option>
+        <option>Finiture Speciali</option>
+        <option>Altro</option>
+      </select>
+    </div>
+    <div class="form-grid">
+      <div class="form-row">
+        <label class="form-label" for="f-quantita">Quantità</label>
+        <input id="f-quantita" class="form-input" type="text" placeholder="es. 500 copie">
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="f-formato">Formato</label>
+        <input id="f-formato" class="form-input" type="text" placeholder="es. A4, A5, 10x15">
+      </div>
+    </div>
+    <div class="form-row">
+      <label class="form-label" for="f-descrizione">Descrizione del Progetto</label>
+      <textarea id="f-descrizione" class="form-textarea" placeholder="Descrivici il tuo lavoro, i materiali, le tempistiche..."></textarea>
+    </div>
+    <div class="form-row" style="margin-top:8px;display:flex;align-items:center;gap:12px;">
+      <input id="f-newsletter" type="checkbox" style="accent-color:var(--gold);width:16px;height:16px;cursor:none;">
+      <label for="f-newsletter" style="font-size:12px;color:rgba(250,248,244,0.4);cursor:default;">
+        Iscrivimi alla newsletter per promozioni e aggiornamenti
+      </label>
+    </div>
+    <div id="form-feedback" style="display:none;margin-top:16px;border-radius:0;"></div>
+    <button id="form-submit-btn" class="form-submit" onclick="submitPreventivo()">
+      <span id="btn-label">Invia Richiesta</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Typogra<span>f</span>ica</div>
+      <p class="footer-tagline">L'arte della stampa dal 1987</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h5>Servizi</h5>
+        <ul>
+          <li><a href="#servizi">Stampa Digitale</a></li>
+          <li><a href="#servizi">Stampa Tipografica</a></li>
+          <li><a href="#tesi">Tesi di Laurea</a></li>
+          <li><a href="#servizi">Gran Formato</a></li>
+          <li><a href="#servizi">Finiture Speciali</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Informazioni</h5>
+        <ul>
+          <li><a href="#">Chi Siamo</a></li>
+          <li><a href="#">Come Funziona</a></li>
+          <li><a href="#materiali">Materiali</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contatti</h5>
+        <ul>
+          <li><a href="#contatti">Via Roma 42, Torino</a></li>
+          <li><a href="tel:01112345678">011 123 4567</a></li>
+          <li><a href="mailto:info@typografica.it">info@typografica.it</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2024 Typografica — Tutti i diritti riservati — P.IVA 12345678901</p>
+    <p class="footer-made">crafted with ♥ in torino</p>
+  </div>
+</footer>
+
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- Script del sito -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
